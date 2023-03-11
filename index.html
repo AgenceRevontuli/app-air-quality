@@ -1,0 +1,54 @@
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App Qualité de l'air</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="app.js" type="module" defer></script>
+
+</head>
+<body>
+    <main class="background-layer">
+        <header>
+            <h1>Air Quality App</h1>
+            <p>Cette application permet d'afficher la qualité de l'air en temps réel dans votre ville. J'utilise l'API d'<a href="https://www.iqair.com">Iqair</a> pour remonter des informations via le fichier javascript. Retrouvez le code source de ce projet sur mon <a href="https://github.com/AgenceRevontuli">github</a>. Ce projet est un excerice javascript proposé par <a href="https://www.ecole-du-web.net/p/app-polution">L'école du web.</a> </p>
+        </header>
+        <article class="quality-container">
+            <div class="quality-img" id="emoji-logo">
+                <img src="./src/img/research.png" alt="loupe">
+                <p id="info-city"></p>
+            </div>
+            <div class="quality-table">
+                <table>
+                    <tr>
+                        <th>City</th>
+                        <td id="city">...</td>
+                    </tr>
+                    <tr>
+                        <th>Polution info</th>
+                        <td id="pollution">...</td>
+                    </tr>
+                    <tr>
+                        <th>Air Quality Index</th>
+                        <td id="index">...</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="quality-bar">
+                <div class="location-pointer">
+                    <img src="./src/img/pin.png" alt="pin" id="logo-pin">
+                </div>
+                <div class="eco-score"></div>
+                <div class="eco-score"></div>
+                <div class="eco-score"></div>
+                <div class="eco-score"></div>
+                <div class="eco-score"></div>
+                <div class="eco-score"></div>
+            </div>
+        </article>
+    </main>
+</body>
+</html>
